@@ -3,18 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>タイピングゲーム</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Scratch プロジェクト</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+        iframe {
+            width: 480px;
+            height: 360px;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <div class="game-container">
-        <h1>タイピングゲーム</h1>
-        <div id="word-display" class="word-display">ここに単語が表示されます</div>
-        <input type="text" id="input-field" placeholder="ここにタイプしてください" autofocus>
-        <div id="score">スコア: 0</div>
-        <button id="start-btn">ゲームスタート</button>
-        <div id="timer">タイマー: 0秒</div>
+    <div class="container">
+        <h1>Scratch プロジェクトを表示</h1>
+        <!-- Scratchプロジェクトの埋め込み -->
+        <iframe src="https://scratch.mit.edu/projects/780866208/embed" allowtransparency="true" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
